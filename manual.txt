@@ -1,0 +1,67 @@
+//This manual is for Text Relate project made by Yair Feldman and Tomer Kay
+
+//Like in code, a line with "//" at the beginning is a comment
+
+//There are 3 input for the jar file - if it is URL or RSS, the link itself, and the path to this file.
+//The first two inputs are obligatory, while the third is not. If the file is not written, there are default arguments written in the program.
+//The rest of the arguments to the program is written on this file.
+
+//Here is the list of arguments and there explaining. After the explanation is the actual argument the program will reed.
+
+// input[0] is the number of results per query.
+20
+
+// input[1] is OpenNLP mode or Stanford mode (write OpenNLP or Stanford)
+OpenNLP
+
+// input[2] is the mode - fast (minimal analyzing of the article from the internet), both, or accurate (no initial filter to the articles from the internet) - 0 ,1 or 2 accordingly
+1
+
+// input[3] is the score equation method - avg or max
+avg
+
+// input[4] is how many results we want at the end
+5
+
+// input[5] is the path folder where we save our results, most similar texts
+./ScoreResults
+
+// input[6] is the path to the file where will save the summary
+./merges
+
+// input[7] is the number of threads we want. if want don't wont write 0 (or less)
+8
+
+// input[8] is the number of lines in each summary.
+10
+
+// input[9] save the project results - input saveResult.
+saveResult
+
+// input[10] save the merged document - input saveMerge.
+saveMerge
+
+// input[11] add to database - input saveDB.
+saveDB
+
+// input[12] the key to Bing for querying
+4552fef33c52453c91202aa1bc2d3077
+
+// input[13] if we want the title to be considered in the ranking equation - input useTitle
+no
+
+// input[14] is the number of results for the RSS feed.
+20
+
+// input[15] the name of the database.
+tomer_db
+
+
+
+//this is the end of the inputs we get from the manual. The next two are given to the jar
+
+// input[16] if its an "URL"/"RSS".
+//This is a mandatory input for the jar - args[0]
+
+// input[17] the url.
+//This is a mandatory input for the jar - args[1]
