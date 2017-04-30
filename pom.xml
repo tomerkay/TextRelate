@@ -30,17 +30,16 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>TextRelateProject.Pipeline.PipelineNoQuery</mainClass>
+              <mainClass>TextRelateProject.Pipeline.Pipeline</mainClass>
             </manifest>
           </archive>
         </configuration>
       </plugin>
 
     </plugins>
+
+
   </build>
-  <modules>
-    <module>TextMerge</module>
-  </modules>
 
 
   <packaging>pom</packaging>
