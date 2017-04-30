@@ -109,10 +109,17 @@
     </dependency>
 
     <dependency>
+      <groupId>org.apache.opennlp</groupId>
+      <artifactId>opennlp-uima</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-math3</artifactId>
       <version>3.2</version>
     </dependency>
+
 
     <dependency>
       <groupId>mysql</groupId>
@@ -124,6 +131,12 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-math3</artifactId>
       <version>3.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sf.squirrel-sql.thirdparty-non-maven</groupId>
+      <artifactId>java-cup</artifactId>
+      <version>0.11a</version>
     </dependency>
 
 
