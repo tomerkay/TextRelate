@@ -23,39 +23,8 @@ public class CountCommonWords {
         freq= new HashMap<>();
         CreateFreq();
     }
-    @Deprecated
-    public String[][] createTableOfSTem(){
-        String[][] table = new String[k][2];
-        FileReader fr = null;
-        int i=0;
-        try {
-            fr = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        BufferedReader br = new BufferedReader(fr);
-        String line;
-        try {
-            while((line = br.readLine()) != null&&i<k){
-                table[i][0]= OpenNlpModels.stemmer.stem(line.split("\t")[0]).toLowerCase();
-                table[i][1]=line.split("\t")[1];
-                i++;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            br.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            fr.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return table;
-    }
+
+    //code comment here
 
     public ArrayList<Pair<String, Long>> createCountOfSTem(){
         ArrayList<Pair<String, Long>> table = new ArrayList<>();
@@ -111,7 +80,7 @@ public class CountCommonWords {
     public void serialize() {
         try {
             FileOutputStream fileOut =
-                    new FileOutputStream("CommonWords_1w.ser");
+                    new FileOutputStream("./project_files_aux/TextRelate_files/CommonWords_1w.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(this.freq);
             out.close();
@@ -124,7 +93,7 @@ public class CountCommonWords {
     public void intoCSV(){
         PrintWriter pw = null;
         try {
-            pw = new PrintWriter(new File("CommonWords_1w.csv"));
+            pw = new PrintWriter(new File("./project_files_aux/TextRelate_files/CommonWords_1w.csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -14,7 +14,7 @@ public class StopWords {
 
     static {
         stopwords = new HashSet<>();
-        getStopWords("stopwords_nltk.txt");
+        getStopWords("./project_files_aux/TextRelate_files/stopwords_nltk.txt");
     }
 
     private static void getStopWords(String path) {

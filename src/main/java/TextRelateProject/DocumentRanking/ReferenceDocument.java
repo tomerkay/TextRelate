@@ -52,10 +52,10 @@ public final class ReferenceDocument extends RetrievedDocument{
         this.parseWay = parseWay.toLowerCase();
         classifier = new BuildClassifier();
         if (parseWay.equals("stanford")) {
-            classifier.unSerializeBuildClassifier("BuildClassifierNaiveBaseStanford6");
+            classifier.unSerializeBuildClassifier("./project_files_aux/TextRelate_files/BuildClassifierNaiveBaseStanford6");
         }
         else{
-            classifier.unSerializeBuildClassifier("BuildClassifierNaiveBaseOpenNLP6");
+            classifier.unSerializeBuildClassifier("./project_files_aux/TextRelate_files/BuildClassifierNaiveBaseOpenNLP6");
         }
         //classifier.unSerializeBuildClassifier("BuildClassifierOld");
         InitializeMembersOfRetrievedDocument(); //this is on the reference document

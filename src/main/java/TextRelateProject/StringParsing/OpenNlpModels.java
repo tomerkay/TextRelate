@@ -41,9 +41,9 @@ public class OpenNlpModels {
         tokenizer = new TokenizerME(getTokenModel());
         pos_tagger = new POSTaggerME(getPosModel());
         chunker = new ChunkerME(getChunkerModel());
-        person_finder = new NameFinderME(getNameFinder("./OpenNLP_models/en-ner-person.bin"));
-        location_finder = new NameFinderME(getNameFinder("./OpenNLP_models/en-ner-location.bin"));
-        organization_finder = new NameFinderME(getNameFinder("./OpenNLP_models/en-ner-organization.bin"));
+        person_finder = new NameFinderME(getNameFinder("./project_files_aux/TextRelate_files/OpenNLP_models/en-ner-person.bin"));
+        location_finder = new NameFinderME(getNameFinder("./project_files_aux/TextRelate_files/OpenNLP_models/en-ner-location.bin"));
+        organization_finder = new NameFinderME(getNameFinder("./project_files_aux/TextRelate_files/OpenNLP_models/en-ner-organization.bin"));
         stemmer = new PorterStemmer();
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
@@ -54,7 +54,7 @@ public class OpenNlpModels {
     private static SentenceModel getSentenceModel() {
         InputStream modelIn = null;
         try {
-            modelIn = new FileInputStream("./OpenNLP_models/en-sent.bin");
+            modelIn = new FileInputStream("./project_files_aux/TextRelate_files/OpenNLP_models/en-sent.bin");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -80,7 +80,7 @@ public class OpenNlpModels {
     private static TokenizerModel getTokenModel() {
         InputStream modelIn = null;
         try {
-            modelIn = new FileInputStream("./OpenNLP_models/en-token.bin");
+            modelIn = new FileInputStream("./project_files_aux/TextRelate_files/OpenNLP_models/en-token.bin");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -104,7 +104,7 @@ public class OpenNlpModels {
         InputStream modelIn = null;
         POSModel model = null;
         try {
-            modelIn = new FileInputStream("./OpenNLP_models/en-pos-maxent.bin");
+            modelIn = new FileInputStream("./project_files_aux/TextRelate_files/OpenNLP_models/en-pos-maxent.bin");
             model = new POSModel(modelIn);
         }
         catch (IOException e) {
@@ -128,7 +128,7 @@ public class OpenNlpModels {
         ChunkerModel model = null;
 
         try {
-            modelIn = new FileInputStream("./openNLP_models/en-chunker.bin");
+            modelIn = new FileInputStream("./project_files_aux/TextRelate_files/OpenNLP_models/en-chunker.bin");
             model = new ChunkerModel(modelIn);
         } catch (IOException e) {
             // Model loading failed, handle the error
