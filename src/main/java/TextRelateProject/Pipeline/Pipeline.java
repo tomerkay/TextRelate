@@ -1,5 +1,6 @@
 package TextRelateProject.Pipeline;
 
+import TextMergeProject.Main;
 import TextRelateProject.BingApi.NewsSearch;
 import TextRelateProject.BingApi.TextExtractor;
 import TextRelateProject.DocumentRanking.ReferenceDocument;
@@ -10,7 +11,6 @@ import TextRelateProject.SQL.MySQLAccess;
 import TextRelateProject.StringParsing.CoreNLP;
 import TextRelateProject.StringParsing.OpenNlpModels;
 import javafx.util.Pair;
-import main.java.Main;
 import org.jsoup.nodes.Document;
 
 import java.io.BufferedReader;
