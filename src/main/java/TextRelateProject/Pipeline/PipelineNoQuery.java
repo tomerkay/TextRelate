@@ -8,7 +8,6 @@ import TextRelateProject.RSS.RSS;
 import TextRelateProject.SQL.MySQLAccess;
 import TextRelateProject.StringParsing.OpenNlpModels;
 import javafx.util.Pair;
-import TextMergeProject.Main;
 import org.jsoup.nodes.Document;
 
 import java.io.BufferedReader;

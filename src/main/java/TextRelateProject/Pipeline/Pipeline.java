@@ -1,6 +1,5 @@
 package TextRelateProject.Pipeline;
 
-import TextMergeProject.Main;
 import TextRelateProject.BingApi.NewsSearch;
 import TextRelateProject.BingApi.TextExtractor;
 import TextRelateProject.DocumentRanking.ReferenceDocument;
