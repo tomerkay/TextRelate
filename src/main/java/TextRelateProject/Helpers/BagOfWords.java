@@ -15,7 +15,7 @@ public class BagOfWords {
     static {
         try {
 //            long start1 = System.currentTimeMillis();
-            FileInputStream fileIn = new FileInputStream("CommonWords_1w.ser");
+            FileInputStream fileIn = new FileInputStream("./project_files_aux/TextRelate_files/CommonWords_1w.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             corpus_count = (HashMap<String, Long>) in.readObject();
             in.close();

@@ -1,5 +1,6 @@
 package TextRelateProject.Pipeline;
 
+import TextMergeProject.Main;
 import TextRelateProject.BingApi.NewsSearch;
 import TextRelateProject.BingApi.TextExtractor;
 import TextRelateProject.DocumentRanking.ReferenceDocument;
@@ -160,7 +161,7 @@ public class Pipeline {
                 } catch (Exception e) {
                     System.out.println("error while uploading the article to the database");
                 }
-                System.out.println("add to DB time time: " + Long.toString((System.currentTimeMillis() - addToDBTime) / 1000) + " seconds. real time is " + sdf.format(cal.getTime()));
+                System.out.println("add to DB time: " + Long.toString((System.currentTimeMillis() - addToDBTime) / 1000) + " seconds. real time is " + sdf.format(cal.getTime()));
             }
         }
 
