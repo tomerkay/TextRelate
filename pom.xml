@@ -102,6 +102,14 @@
     </dependency>
 
     <dependency>
+      <groupId>edu.stanford.nlp</groupId>
+      <artifactId>stanford-corenlp</artifactId>
+      <version>3.7.0</version>
+      <classifier>models</classifier>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.apache.opennlp</groupId>
       <artifactId>opennlp-tools</artifactId>
       <version>1.6.0</version>
@@ -137,9 +145,6 @@
       <artifactId>java-cup</artifactId>
       <version>0.11a</version>
     </dependency>
-
-
-
 
 
   </dependencies>

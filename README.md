@@ -25,14 +25,15 @@ How our project works:
 		Stage 4: Ranking Additional Articles
 		
 
+The project "Main" class is Pipeline.
+(comment: Stanford CoreNLP library which we use is very heavy so you can use piplelineNoQuery if you don't want to use it, and omit "stanford" from the dependencies in the pom.xml. If you do so, you need to insert yourself the queriries inside the code in the piplelineNoQuery class.)
 
-Our project has three inputs:
+There are three inputs to Pipeline (also to piplelineNoQuery):
 RSS/URL
 url link
 not mandatory - path to the "manual.txt" (the name is as you desire)
 
-You need to run the jar from the file that contains the jar.
-Notice that the .jar file must be in a specific relation to "java libraries" folder - inside a folder "X", when "X" is in the same folder as "java libraries".
+If you make a jar out of the project, you need to run the jar from a folder in a specific relation to "java libraries" folder - inside a folder "X", when "X" is in the same folder as "java libraries".
 
 Example for a run:
 java -jar TextRelate.jar RSS http://feeds.reuters.com/news/artsculture manual.txt
